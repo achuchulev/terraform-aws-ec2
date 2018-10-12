@@ -1,5 +1,5 @@
 module "random_name" {
-  source = "github.com/achuchulev/module-random_pet/module-rp"
+  source = "github.com/achuchulev/module-random_pet"
 }
 
 resource "aws_key_pair" "my_key" {
