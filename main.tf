@@ -4,7 +4,7 @@ module "random_name" {
 
 resource "aws_key_pair" "my_key" {
   key_name   = "key-${module.random_name.name}"
-  public_key = "${file("~/.ssh/id_rsa.pub")}"
+  public_key = "${var.public_key}"
 }
 
 resource "aws_instance" "new_ec2" {
