@@ -28,6 +28,6 @@ variable "public_key" {
 }
 
 variable "vpc_security_group_ids" {
-  type        = "list"
+  type        = list(string)
   description = "AWS VPC security group ids"
 }
