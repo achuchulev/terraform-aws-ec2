@@ -16,6 +16,7 @@ resource "aws_instance" "new_ec2" {
   key_name               = aws_key_pair.my_key.id
 
   tags = {
-    Name = module.random_name.name
+    #Name = module.random_name.name
+    Name = "application"
   }
 }
